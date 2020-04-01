@@ -22,7 +22,7 @@ function Footer(props) {
           <i c="fas fa-at"> <Mail /></i>
           <br />
         
-      <h1 className="text-muted small mb-0"><i className="fas fa-phone-volume fa-2x"> 224-520-1811</i> <br />Copyright &copy; Your Website 2020 </h1>
+      <h1 className="text-muted small mb-0"><i className="fas fa-phone-volume fa-2x"> 224-520-1811</i> <br /><br />Copyright &copy; Your Website 2020 </h1>
     </div>
   </footer>
   )
