@@ -5,7 +5,7 @@ import "./style.css";
 import Project from '../../pages/Portfolio';
 import { Link, Element, Events, animateScroll as scroll, scroller } from 'react-scroll'
 
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem,  MDBNavbarToggler, MDBCollapse } from "mdbreact";
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavbarToggler, MDBCollapse, MDBIcon } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
 
 
@@ -17,11 +17,11 @@ class Nev extends Component {
 
     state = {
         isOpen: false
-      };
-      
-      toggleCollapse = () => {
+    };
+
+    toggleCollapse = () => {
         this.setState({ isOpen: !this.state.isOpen });
-      }
+    }
 
     componentDidMount() {
 
@@ -78,44 +78,44 @@ class Nev extends Component {
         return (
             <div>
                 <Router>
-      <MDBNavbar color="light" light expand="md" style={{backgroundColor: "#040b14", position: "fixed", zIndex: 1000, width: "100%"}}>
-        <MDBNavbarBrand >
-          <strong className="white-text"></strong>
-        </MDBNavbarBrand>
-        <MDBNavbarToggler onClick={this.toggleCollapse} />
-        <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-          <MDBNavbarNav left>
-            <MDBNavItem active>
-            <Link href="" activeClass="active" className={this.props === "Home" ? "nav-link active" : "nav-link"}
-                                style={{ color: "#e3f2fd" }} to="test5" spy={true} smooth={true} duration={500} > <i className="fas fa-home"></i> Home</Link>
-            </MDBNavItem>
-            <MDBNavItem>
-            <Link href="" activeClass="active" className={this.props === "About" ? "nav-link active" : "nav-link"}
-                                style={{ color: "#e3f2fd" }} to="test1" spy={true} smooth={true} duration={500} > <i className="fas fa-user"></i> About</Link>
-            </MDBNavItem>
-            
-            <MDBNavItem>
-            <Link href="" activeClass="active" className={this.props === "Contact" ? "nav-link active" : "nav-link"}
-                                style={{ color: "#e3f2fd" }} to="test4" spy={true} smooth={true} duration={500} > <i className="fas fa-envelope"></i>Contact</Link>
-            </MDBNavItem>
-          
-          </MDBNavbarNav>
-          <MDBNavbarNav right>
-           
-            <MDBNavItem>
-              <a  className="waves-effect waves-light" href="https://myresumecode.herokuapp.com/">
-                <i style={{ color: "#e3f2fd", margin:"10px 10px",  }}className="fas fa-file"></i>
-              </a>
-            </MDBNavItem>
-                     <MDBNavItem>
-<i className="fas fa-phone-volume" style={{ color: "#e3f2fd", margin:"10px 10px",  }}> 224-520-1811</i> </MDBNavItem>
+                    <MDBNavbar color="light" light expand="md" style={{ backgroundColor: "#040b14", position: "fixed", zIndex: 1000, width: "100%" }}>
+                        <MDBNavbarBrand >
+                            <strong className="white-text"></strong>
+                        </MDBNavbarBrand>
+                        <MDBNavbarToggler onClick={this.toggleCollapse} />
+                        <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+                            <MDBNavbarNav left>
+                                <MDBNavItem active>
+                                    <Link href="" activeClass="active" className={this.props === "Home" ? "nav-link active" : "nav-link"}
+                                        style={{ color: "#e3f2fd" }} to="test5" spy={true} smooth={true} duration={500} > <i className="fas fa-home">Home</i> </Link>
+                                </MDBNavItem>
+                                <MDBNavItem>
+                                    <Link href="" activeClass="active" className={this.props === "About" ? "nav-link active" : "nav-link"}
+                                        style={{ color: "#e3f2fd" }} to="test1" spy={true} smooth={true} duration={500} > <i className="fas fa-user">About</i> </Link>
+                                </MDBNavItem>
 
-          </MDBNavbarNav>
-        </MDBCollapse>
-      </MDBNavbar>
-    </Router>
-    
-                
+                                <MDBNavItem>
+                                    <Link href="" activeClass="active" className={this.props === "Contact" ? "nav-link active" : "nav-link"}
+                                        style={{ color: "#e3f2fd" }} to="test4" spy={true} smooth={true} duration={500} > <i className="fas fa-envelope">Contact</i></Link>
+                                </MDBNavItem>
+
+                            </MDBNavbarNav>
+                            <MDBNavbarNav right>
+
+                                <MDBNavItem>
+                                    <a className="waves-effect waves-light" href="https://myresumecode.herokuapp.com/">
+                                        <i style={{ color: "#e3f2fd", margin: "10px 10px", }} className="fas fa-file"></i>
+                                    </a>|
+            </MDBNavItem>
+                                <MDBNavItem>
+                                    <i className="fas fa-phone-volume" style={{ color: "#e3f2fd", margin: "10px 10px", }}> 224-520-1811</i> |</MDBNavItem>
+                                <MDBIcon fab icon="google-plus-g" style={{ color: "#e3f2fd", margin: "10px 10px", }} > algandel86@gmail.com</MDBIcon>
+                            </MDBNavbarNav>
+                        </MDBCollapse>
+                    </MDBNavbar>
+                </Router>
+
+
                 {/* header */}
                 <Element name="test5" className="element" >
 
@@ -127,16 +127,16 @@ class Nev extends Component {
                 {/* about */}
 
                 <Element name="test1" className="element" >
-                <Project />
+                    <Project />
                 </Element>
-        
+
                 <br /><br />
                 {/* map */}
-                        <Element name="test4" className="element" >
-                            <div id="top_menu"><Map /></div>
-                        </Element>
-               
-              
+                <Element name="test4" className="element" >
+                    <div id="top_menu"><Map /></div>
+                </Element>
+
+
             </div>
         )
     }
