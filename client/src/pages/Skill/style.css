@@ -1,0 +1,30 @@
+
+  .color {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+   
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   
+  
+  }
+h2, h3 {
+  
+  color: aliceblue;
+  padding:  10px;
+  text-align: center;
+}
+  .text-lift {
+    color: aliceblue;
+    font-size: large;
+    text-transform: uppercase;
+   
+  }
+
+
+
+
