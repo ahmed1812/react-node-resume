@@ -67,7 +67,7 @@ class Contact extends Component {
         
         if (isValid) {
             console.log(newGmail);
-          
+            alert('Posted your message successfully!')
             // axios
             API.gmail(newGmail);
            
