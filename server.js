@@ -39,7 +39,7 @@ app.post('/api/form', (req, res) => {
 
         // setup email data with unicode symbols
         let mailOptions = {
-            from: '" my profoleo "<aLgandel86@gmail.com>', // sender address
+            from: '" my profoleo "<aLgandel19@gmail.com>', // sender address
             to: 'aLgandel86@gmail.com', // list of receivers
            
           
