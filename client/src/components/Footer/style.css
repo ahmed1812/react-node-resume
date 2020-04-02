@@ -28,10 +28,3 @@ footer.footer .social-link:hover {
     text-decoration: none
 }
 
-a {
-    color: #1d809f
-}
-
-a:active, a:focus, a:hover {
-    color: #155d74
-}
