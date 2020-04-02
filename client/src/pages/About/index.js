@@ -108,7 +108,7 @@ class Nev extends Component {
                                     </a>|
             </MDBNavItem>
                                 <MDBNavItem>
-                                    <i className="fas fa-phone-volume" style={{ color: "#e3f2fd", margin: "10px 10px", }}> 224-520-1811</i> |</MDBNavItem>
+                                <a href="tel:2245201511">  <i className="fas fa-phone-volume" style={{ color: "#e3f2fd", margin: "10px 10px", }}> 224-520-1811</i> </a>|</MDBNavItem>
                                 <MDBIcon fab icon="google-plus-g" style={{ color: "#e3f2fd", margin: "10px 10px", }} > algandel86@gmail.com</MDBIcon>
                             </MDBNavbarNav>
                         </MDBCollapse>
